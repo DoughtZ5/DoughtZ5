@@ -1,0 +1,271 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local tab = Instance.new("Frame")
+local Framemain = Instance.new("Frame")
+local main = Instance.new("TextLabel")
+local ScrollingFramemain = Instance.new("ScrollingFrame")
+local Framestats = Instance.new("Frame")
+local stats = Instance.new("TextLabel")
+local ScrollingFramestats = Instance.new("ScrollingFrame")
+local Frameshop = Instance.new("Frame")
+local shop = Instance.new("TextLabel")
+local ScrollingFrameshop = Instance.new("ScrollingFrame")
+local Framemisc = Instance.new("Frame")
+local misc = Instance.new("TextLabel")
+local ScrollingFramemisc = Instance.new("ScrollingFrame")
+local main_2 = Instance.new("TextButton")
+local misc_2 = Instance.new("TextButton")
+local shop_2 = Instance.new("TextButton")
+local stats_2 = Instance.new("TextButton")
+local Frameup = Instance.new("Frame")
+local untihub = Instance.new("TextLabel")
+local untihub_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Frame.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame.Position = UDim2.new(0.419407904, 0, 0.151648372, 0)
+Frame.Size = UDim2.new(0, 499, 0, 671)
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Frame
+
+tab.Name = "tab"
+tab.Parent = Frame
+tab.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+tab.BorderColor3 = Color3.fromRGB(255, 255, 255)
+tab.Position = UDim2.new(0.0440881774, 0, 0.296572268, 0)
+tab.Size = UDim2.new(0, 454, 0, 34)
+
+Framemain.Name = "Framemain"
+Framemain.Parent = Frame
+Framemain.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Framemain.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Framemain.Position = UDim2.new(0.0420959108, 0, 0.374068558, 0)
+Framemain.Size = UDim2.new(0, 454, 0, 395)
+
+main.Name = "main"
+main.Parent = Framemain
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Size = UDim2.new(0, 80, 0, 23)
+main.Font = Enum.Font.SourceSans
+main.Text = "main"
+main.TextColor3 = Color3.fromRGB(255, 255, 255)
+main.TextSize = 14.000
+
+ScrollingFramemain.Name = "ScrollingFramemain"
+ScrollingFramemain.Parent = Framemain
+ScrollingFramemain.Active = true
+ScrollingFramemain.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFramemain.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFramemain.Position = UDim2.new(0.0375275947, 0, 0.0582278483, 0)
+ScrollingFramemain.Size = UDim2.new(0, 424, 0, 358)
+
+Framestats.Name = "Framestats"
+Framestats.Parent = Frame
+Framestats.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Framestats.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Framestats.Position = UDim2.new(0.0420841686, 0, 0.374068558, 0)
+Framestats.Size = UDim2.new(0, 454, 0, 395)
+
+stats.Name = "stats"
+stats.Parent = Framestats
+stats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stats.BackgroundTransparency = 1.000
+stats.Size = UDim2.new(0, 80, 0, 23)
+stats.Font = Enum.Font.SourceSans
+stats.Text = "stats"
+stats.TextColor3 = Color3.fromRGB(255, 255, 255)
+stats.TextSize = 14.000
+
+ScrollingFramestats.Name = "ScrollingFramestats"
+ScrollingFramestats.Parent = Framestats
+ScrollingFramestats.Active = true
+ScrollingFramestats.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFramestats.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFramestats.Position = UDim2.new(0.0375275947, 0, 0.0582278483, 0)
+ScrollingFramestats.Size = UDim2.new(0, 424, 0, 358)
+
+Frameshop.Name = "Frameshop"
+Frameshop.Parent = Frame
+Frameshop.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Frameshop.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frameshop.Position = UDim2.new(0.0440881848, 0, 0.374068558, 0)
+Frameshop.Size = UDim2.new(0, 454, 0, 395)
+
+shop.Name = "shop"
+shop.Parent = Frameshop
+shop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shop.BackgroundTransparency = 1.000
+shop.Size = UDim2.new(0, 80, 0, 23)
+shop.Font = Enum.Font.SourceSans
+shop.Text = "shop"
+shop.TextColor3 = Color3.fromRGB(255, 255, 255)
+shop.TextSize = 14.000
+
+ScrollingFrameshop.Name = "ScrollingFrameshop"
+ScrollingFrameshop.Parent = Frameshop
+ScrollingFrameshop.Active = true
+ScrollingFrameshop.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFrameshop.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFrameshop.Position = UDim2.new(0.0375275947, 0, 0.0582278483, 0)
+ScrollingFrameshop.Size = UDim2.new(0, 424, 0, 358)
+
+Framemisc.Name = "Framemisc"
+Framemisc.Parent = Frame
+Framemisc.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Framemisc.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Framemisc.Position = UDim2.new(0.0420841686, 0, 0.374068558, 0)
+Framemisc.Size = UDim2.new(0, 455, 0, 395)
+
+misc.Name = "misc"
+misc.Parent = Framemisc
+misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+misc.BackgroundTransparency = 1.000
+misc.Size = UDim2.new(0, 80, 0, 23)
+misc.Font = Enum.Font.SourceSans
+misc.Text = "misc"
+misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+misc.TextSize = 14.000
+
+ScrollingFramemisc.Name = "ScrollingFramemisc"
+ScrollingFramemisc.Parent = Framemisc
+ScrollingFramemisc.Active = true
+ScrollingFramemisc.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFramemisc.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ScrollingFramemisc.Position = UDim2.new(0.0309341885, 0, 0.0582278483, 0)
+ScrollingFramemisc.Size = UDim2.new(0, 424, 0, 358)
+
+main_2.Name = "main"
+main_2.Parent = Frame
+main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main_2.BackgroundTransparency = 1.000
+main_2.Position = UDim2.new(0.0681362748, 0, 0.302445859, 0)
+main_2.Size = UDim2.new(0, 102, 0, 26)
+main_2.Font = Enum.Font.SourceSans
+main_2.Text = "Main"
+main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+main_2.TextSize = 29.000
+
+misc_2.Name = "misc"
+misc_2.Parent = Frame
+misc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+misc_2.BackgroundTransparency = 1.000
+misc_2.Position = UDim2.new(0.677782893, 0, 0.300955564, 0)
+misc_2.Size = UDim2.new(0, 102, 0, 26)
+misc_2.Font = Enum.Font.SourceSans
+misc_2.Text = "Misc"
+misc_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+misc_2.TextSize = 29.000
+
+shop_2.Name = "shop"
+shop_2.Parent = Frame
+shop_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shop_2.BackgroundTransparency = 1.000
+shop_2.Position = UDim2.new(0.47515735, 0, 0.300955564, 0)
+shop_2.Size = UDim2.new(0, 102, 0, 26)
+shop_2.Font = Enum.Font.SourceSans
+shop_2.Text = "Shop"
+shop_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+shop_2.TextSize = 29.000
+
+stats_2.Name = "stats"
+stats_2.Parent = Frame
+stats_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stats_2.BackgroundTransparency = 1.000
+stats_2.Position = UDim2.new(0.271340042, 0, 0.302445859, 0)
+stats_2.Size = UDim2.new(0, 102, 0, 26)
+stats_2.Font = Enum.Font.SourceSans
+stats_2.Text = "Stats"
+stats_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+stats_2.TextSize = 29.000
+
+Frameup.Name = "Frameup"
+Frameup.Parent = Frame
+Frameup.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Frameup.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frameup.Position = UDim2.new(0.0440881774, 0, 0.05961252, 0)
+Frameup.Size = UDim2.new(0, 454, 0, 134)
+
+untihub.Name = "unti hub"
+untihub.Parent = Frameup
+untihub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+untihub.BackgroundTransparency = 1.000
+untihub.Position = UDim2.new(-0.0528634377, 0, -0.373134315, 0)
+untihub.Size = UDim2.new(0, 200, 0, 50)
+untihub.Font = Enum.Font.SourceSans
+untihub.Text = "UNTI HUB"
+untihub.TextColor3 = Color3.fromRGB(255, 255, 255)
+untihub.TextSize = 32.000
+
+untihub_2.Name = "unti hub"
+untihub_2.Parent = Frameup
+untihub_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+untihub_2.BackgroundTransparency = 1.000
+untihub_2.Position = UDim2.new(-0.00218975544, 0, 0.201492548, 0)
+untihub_2.Size = UDim2.new(0, 200, 0, 50)
+untihub_2.Font = Enum.Font.SourceSans
+untihub_2.Text = "UNTI HUB"
+untihub_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+untihub_2.TextSize = 32.000
+
+-- Scripts:
+
+local function HSWMEEI_fake_script() -- main_2.LocalScriptmain 
+	local script = Instance.new('LocalScript', main_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Framemain.Visible = true
+		script.Parent.Parent.Framestats.Visible = false
+		script.Parent.Parent.Frameshop.Visible = false
+		script.Parent.Parent.Framemisc.Visible = false
+	end)  
+	
+end
+coroutine.wrap(HSWMEEI_fake_script)()
+local function YXGGXP_fake_script() -- misc_2.LocalScriptmisc 
+	local script = Instance.new('LocalScript', misc_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Framemain.Visible = false
+		script.Parent.Parent.Framestats.Visible = false
+		script.Parent.Parent.Frameshop.Visible = false
+		script.Parent.Parent.Framemisc.Visible = true
+	end)  
+	
+end
+coroutine.wrap(YXGGXP_fake_script)()
+local function TSYLFNC_fake_script() -- shop_2.LocalScriptshop 
+	local script = Instance.new('LocalScript', shop_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Framemain.Visible = false
+		script.Parent.Parent.Framestats.Visible = false
+		script.Parent.Parent.Frameshop.Visible = true
+		script.Parent.Parent.Framemisc.Visible = false
+	end)  
+end
+coroutine.wrap(TSYLFNC_fake_script)()
+local function MXQON_fake_script() -- stats_2.LocalScriptstats 
+	local script = Instance.new('LocalScript', stats_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Framemain.Visible = false
+		script.Parent.Parent.Framestats.Visible = true
+		script.Parent.Parent.Frameshop.Visible = false
+		script.Parent.Parent.Framemisc.Visible = false
+	end)  
+	
+end
+coroutine.wrap(MXQON_fake_script)()
